@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Login from "./Pages/Login";
+import Forgotpassword from "./Componets/Forgotpassword";
+import Signup from "./Pages/Signup";
+import Dashbord from "./Pages/Dashbord";
+import Setting from "./Pages/Setting";
+import Profile from "./Pages/Profile";
+import Sidebar2 from "./Componets/Sidebar2";
+import Tables from "./Pages/Tables";
+import PageNotFound from "./Pages/PageNotFound";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Sidebar2>
+          <Routes>
+            {/* Home Routes */}
+            <Route path="/" element={<Dashbord />} />
+            <Route path="/Setting" element={<Setting />} />
+            <Route path="/order_history" element={<Profile />} />
+            <Route path="/table" element={<Tables/>}/>
+
+            <Route path="/login" element={<Login />}>
+              <Route path="forgot_password" element={<Forgotpassword />} />
+            </Route>
+            <Route path="/signup" element={<Signup />} />
+
+            <Route path="*" element={<PageNotFound/>}/>
+          </Routes>
+        </Sidebar2>
+      </BrowserRouter>
     </div>
   );
 }
