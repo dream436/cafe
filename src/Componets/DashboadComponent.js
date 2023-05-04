@@ -5,8 +5,9 @@ function DashboadComponent() {
     <div>
       <div class="container items-center px-4  m-auto">
         <div class="flex flex-wrap pb-3 mx-4 md:mx-24 lg:mx-0">
+          
           <div class="w-full p-2 lg:w-1/4 md:w-1/2 cursor-pointer">
-            <div class="flex flex-col px-6 py-10 overflow-hidden bg-gray-50 hover:bg-gradient-to-br hover:from-purple-400 hover:via-blue-400 hover:to-blue-500 rounded-xl shadow-lg duration-300 hover:shadow-2xl group">
+            <div class="flex flex-col px-6 py-10 overflow-hidden bg-white hover:bg-gradient-to-br hover:from-purple-400 hover:via-blue-400 hover:to-blue-500 rounded-xl shadow-lg duration-300 hover:shadow-2xl group">
               <div class="flex flex-row justify-between items-center">
                 <div class="px-4 py-4 bg-gray-300  rounded-xl bg-opacity-30">
                   <svg
@@ -68,7 +69,7 @@ function DashboadComponent() {
             </div>
           </div>
           <div class="w-full p-2 lg:w-1/4 md:w-1/2 cursor-pointer">
-            <div class="flex flex-col px-6 py-10 overflow-hidden bg-gray-50 hover:bg-gradient-to-br hover:from-purple-400 hover:via-blue-400 hover:to-blue-500 rounded-xl shadow-lg duration-300 hover:shadow-2xl group">
+            <div class="flex flex-col px-6 py-10 overflow-hidden bg-white hover:bg-gradient-to-br hover:from-purple-400 hover:via-blue-400 hover:to-blue-500 rounded-xl shadow-lg duration-300 hover:shadow-2xl group">
               <div class="flex flex-row justify-between items-center">
                 <div class="px-4 py-4 bg-gray-300  rounded-xl bg-opacity-30">
                   <svg
@@ -121,7 +122,7 @@ function DashboadComponent() {
             </div>
           </div>
           <div class="w-full p-2 lg:w-1/4 md:w-1/2 cursor-pointer">
-            <div class="flex flex-col px-6 py-10 overflow-hidden bg-gray-50 hover:bg-gradient-to-br hover:from-purple-400 hover:via-blue-400 hover:to-blue-500 rounded-xl shadow-lg duration-300 hover:shadow-2xl group">
+            <div class="flex flex-col px-6 py-10 overflow-hidden bg-white hover:bg-gradient-to-br hover:from-purple-400 hover:via-blue-400 hover:to-blue-500 rounded-xl shadow-lg duration-300 hover:shadow-2xl group">
               <div class="flex flex-row justify-between items-center">
                 <div class="px-4 py-4 bg-gray-300  rounded-xl bg-opacity-30">
                   <svg
@@ -179,7 +180,7 @@ function DashboadComponent() {
             </div>
           </div>
           <div class="w-full p-2 lg:w-1/4 md:w-1/2 cursor-pointer">
-            <div class="flex flex-col px-6 py-10 overflow-hidden bg-gray-50 hover:bg-gradient-to-br hover:from-purple-400 hover:via-blue-400 hover:to-blue-500 rounded-xl shadow-lg duration-300 hover:shadow-2xl group">
+            <div class="flex flex-col px-6 py-10 overflow-hidden bg-white hover:bg-gradient-to-br hover:from-purple-400 hover:via-blue-400 hover:to-blue-500 rounded-xl shadow-lg duration-300 hover:shadow-2xl group">
               <div class="flex flex-row justify-between items-center">
                 <div class="px-4 py-4 bg-gray-300  rounded-xl bg-opacity-30">
                   <svg

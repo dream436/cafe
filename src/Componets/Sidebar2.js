@@ -83,7 +83,7 @@ function Sidebar2({ children }) {
                   <NavLink
                     to={route.path}
                     key={route.key}
-                    className={({ isActive, isPending }) =>isPending ? "pending" : isActive ? `${isClose? "expend" : "active"} ` : ""  }
+                    className={({ isActive, isPending }) =>isPending ? "pending" : isActive ? `${isClose? "expend bg-slate-50" : "active bg-slate-50"} ` : ""  }
                   >
                     <div className="flex items-center py-2 ">
                       {" "}
@@ -97,7 +97,7 @@ function Sidebar2({ children }) {
           </div>
         </motion.div>
       )}
-      <main className={"main_content"}>{children}</main>
+      <main className={"main_content bg-slate-50"}>{children}</main>
     </div>
   );
 }

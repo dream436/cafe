@@ -30,7 +30,7 @@
 
 .active {
   position: relative;
-  background-color: white;
+  /* background-color: white; */
   color: #7E22CE;
   margin-left: 3px;
   border-radius: 23px 1px 0px 23px;
@@ -41,7 +41,7 @@
 
 .expend {
     position: relative;
-    background-color: white;
+    /* background-color: white; */
     color: #7E22CE;
     margin-left: 3px;
     border-radius: 23px 1px 0px 23px;
@@ -66,16 +66,16 @@
 }
 .navlink > .active::before {
   top: auto;
-  bottom: 42px;
+  bottom: 41px;
   border-radius: 0 15px 0 0;
 }
 
 .active::after {
-  box-shadow: 0 12px 0 0 white;
+  box-shadow: 0 12px 0 0 #F8FAFC;
 }
 
 .active::before {
-  box-shadow: 0 -12px 0 0 white;
+  box-shadow: 0 -12px 0 0 #F8FAFC;
 }
 
 .navlink > .expend::after,
@@ -97,11 +97,11 @@
 }
 
 .expend::after {
-  box-shadow: 0 12px 0 0 white;
+  box-shadow: 0 12px 0 0 #F8FAFC;
 }
 
 .expend::before {
-  box-shadow: 0 -12px 0 0 white;
+  box-shadow: 0 -12px 0 0 #F8FAFC;
 }
 
 
