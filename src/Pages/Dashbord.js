@@ -7,6 +7,9 @@ import { motion } from "framer-motion";
 import logo from "../Assets/logo.png";
 
 function Dashbord() {
+
+  document.title ="DashBoard"
+
   const { user, setUser } = useContext(AuthContext);
   const token = localStorage.getItem("token");
   const detail = jwt_decode(token);
@@ -18,7 +21,7 @@ function Dashbord() {
 
   useEffect(() => {
     userdetail();
-    console.log(user);
+    // console.log(user);
   }, [token]);
 
   const signout = () => {
@@ -27,14 +30,14 @@ function Dashbord() {
   };
 
   const [menu, setMenu] = useState(false);
-  console.log(menu);
+  // console.log(menu);
   return (
     <div>
       <div className="">
         <div>
           <div className="flex justify-between mx-4 my-3 items-center">
             <div className="flex items-center">
-              <img src={logo} className="w-20" alt="" srcset="" />
+              <img src={logo} className="w-20" alt="" srcSet="" />
               <div>
                 <h1 className="font-1">Caffe Master</h1>
               </div>
@@ -47,7 +50,7 @@ function Dashbord() {
                 <img
                   src={user.picture}
                   alt=""
-                  srcset=""
+                  srcSet=""
                   className="rounded-full w-12 cursor-pointer"
                   onClick={() => {
                     setMenu(!menu);

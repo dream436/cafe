@@ -48,11 +48,7 @@ function Sidebar2({ children }) {
       icone: <HiOutlineLogout />,
     },
   ];
-
-  console.log(routes)
-
   
-
   let { pathname } = useLocation();
   return (
     <div className="main-conatiner">
@@ -83,11 +79,12 @@ function Sidebar2({ children }) {
                   <NavLink
                     to={route.path}
                     key={route.key}
+                    
                     className={({ isActive, isPending }) =>isPending ? "pending" : isActive ? `${isClose? "expend bg-slate-50" : "active bg-slate-50"} ` : ""  }
                   >
                     <div className="flex items-center py-2 ">
                       {" "}
-                      <div className="icon px-2 text-xl">{route.icone}</div>
+                      <div className="icon px-2 text-xl" key={route.path}>{route.icone}</div>
                       <div className="name px-2 text-lg">{route.name}</div>
                     </div>
                   </NavLink>

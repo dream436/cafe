@@ -6,41 +6,26 @@ import plusimage from "../Assets/plus.png";
 
 function Tables() {
   const [tables, setTable] = useState([]);
+  const [tablesl, setTablel] = useState(0);
 
-  var dintables = [
-    {
-      tb_number: 1,
-    },
-    {
-      tb_number: 2,
-    },
-    {
-      tb_number: 3,
-    },
-    {
-      tb_number: 4,
-    },
-    {
-      tb_number: 5,
-    },
-    {
-      tb_number: 6,
-    },
-    {
-      tb_number: 7,
-    },
-    {
-      tb_number: 8,
-    },
-    {
-      tb_number: 9,
-    }
-  ];
+  const dintables = [];
+  const Addtable = () => {
+    const lenth = tables.length + 1;
+    tables.push({ "tb_number": lenth });
+    setTable(tables)
+    setTablel(tables.length)
+    console.log(tables)
+    console.log(tablesl)
+    // setTable({...tables , dintables})
+    // setTable({ "tb_number": lenth })
 
+  };
+
+ 
   useEffect(() => {
-    setTable(dintables); // eslint-disable-next-line
-  }, []);
-
+    setTable(tables)
+    console.log(tables.length)
+  }, [tablesl]);
 
   return (
     <div>
@@ -56,7 +41,7 @@ function Tables() {
           className="flex"
         >
           <div className="flex flex-wrap pt-12">
-            {tables.map((table) => {
+            {tables?.map((table) => {
               return (
                 <>
                   <div className="mx-2">
@@ -70,7 +55,7 @@ function Tables() {
                           src={tableimage}
                           className="w-32"
                           alt=""
-                          srcset=""
+                          srcSet=""
                         />
                       </motion.div>
                       <div
@@ -79,7 +64,7 @@ function Tables() {
                       >
                         <div className="flex items-center justify-center">
                           <div className="relative">
-                            <img src={label} className="w-8" alt="" srcset="" />
+                            <img src={label} className="w-8" alt="" srcSet="" />
                           </div>
                           <div className="absolute top-5">
                             <span>{table.tb_number}</span>
@@ -92,13 +77,15 @@ function Tables() {
               );
             })}
 
-            <div
-              className="bg-white h-44 border-dashed border relative bottom-6 cursor-pointer rounded-lg flex justify-center items-end"
-              
-            >
-              <div className=" w-44 h-full flex flex-col justify-center items-center">
-                <div class="cla">
-                  <img src={plusimage} alt="" className="w-12" srcset="" />
+            <div className="bg-white h-44 border-dashed border relative bottom-6 cursor-pointer rounded-lg flex justify-center items-end">
+              <div
+                className=" w-44 h-full flex flex-col justify-center items-center"
+                onClick={() => {
+                  Addtable();
+                }}
+              >
+                <div className="">
+                  <img src={plusimage} alt="" className="w-12" srcSet="" />
                 </div>
               </div>
             </div>
