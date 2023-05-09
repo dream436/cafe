@@ -47,7 +47,7 @@ function DashboadComponent() {
                 </div>
               </div>
               <h1 className="text-3xl sm:text-4xl xl:text-4xl font-bold text-gray-700 mt-12 group-hover:text-gray-50">
-                ₹122203
+                ₹0
               </h1>
               <div className="flex flex-row justify-between group-hover:text-gray-200">
                 <p>Monthly Sale</p>
@@ -100,7 +100,7 @@ function DashboadComponent() {
                 </div>
               </div>
               <h1 className="text-3xl sm:text-4xl xl:text-4xl font-bold text-gray-700 mt-12 group-hover:text-gray-50">
-                ₹12000
+                ₹0
               </h1>
               <div className="flex flex-row justify-between group-hover:text-gray-200">
                 <p>Today's Sale</p>
@@ -158,7 +158,7 @@ function DashboadComponent() {
                 </div>
               </div>
               <h1 className="text-3xl sm:text-4xl xl:text-4xl font-bold text-gray-700 mt-12 group-hover:text-gray-50">
-                ₹ 2.3 lakh
+                ₹ 0
               </h1>
               <div className="flex flex-row justify-between group-hover:text-gray-200">
                 <p>Monthly target</p>

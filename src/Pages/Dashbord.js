@@ -19,10 +19,13 @@ function Dashbord() {
     setUser(detail);
   };
 
+  
   useEffect(() => {
     userdetail();
     // console.log(user);
   }, [token]);
+
+  console.log(user)
 
   const signout = () => {
     localStorage.clear();
@@ -30,7 +33,6 @@ function Dashbord() {
   };
 
   const [menu, setMenu] = useState(false);
-  // console.log(menu);
   return (
     <div>
       <div className="">

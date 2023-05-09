@@ -8,24 +8,15 @@ function Tables() {
   const [tables, setTable] = useState([]);
   const [tablesl, setTablel] = useState(0);
 
-  const dintables = [];
   const Addtable = () => {
     const lenth = tables.length + 1;
     tables.push({ "tb_number": lenth });
     setTable(tables)
     setTablel(tables.length)
-    console.log(tables)
-    console.log(tablesl)
-    // setTable({...tables , dintables})
-    // setTable({ "tb_number": lenth })
-
   };
-
- 
   useEffect(() => {
     setTable(tables)
-    console.log(tables.length)
-  }, [tablesl]);
+  },[tablesl]);
 
   return (
     <div>

@@ -51,7 +51,7 @@ function Sidebar2({ children }) {
   
   let { pathname } = useLocation();
   return (
-    <div className="main-conatiner">
+    <div className="main-conatiner min-h-screen">
       {pathname === "/login" ? (
         " "
       ) : (
